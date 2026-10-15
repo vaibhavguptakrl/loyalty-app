@@ -1,0 +1,6 @@
+{
+  "name": "Shiv Agency Loyalty - Plumber Rewards Karauli",
+  "description": "Digital rewards, instant UPI payouts, passbook ledger, and AI KYC verification for plumbers and contractors at Shiv Agency, Karauli.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

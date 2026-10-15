@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-surface: #fcf9f8;
+    --color-surface-dim: #dcd9d9;
+    --color-surface-bright: #fcf9f8;
+    --color-surface-container-lowest: #ffffff;
+    --color-surface-container-low: #f6f3f2;
+    --color-surface-container: #f0eded;
+    --color-surface-container-high: #eae7e7;
+    --color-surface-container-highest: #e5e2e1;
+    --color-on-surface: #1b1b1c;
+    --color-on-surface-variant: #554339;
+    --color-inverse-surface: #1e1e1e;
+    --color-inverse-on-surface: #f3f0ef;
+    --color-outline: #887368;
+    --color-outline-variant: #dbc1b5;
+    --color-primary: #964407;
+    --color-on-primary: #ffffff;
+    --color-primary-container: #b65c21;
+    --color-on-primary-container: #fffbff;
+    --color-primary-fixed: #ffdbca;
+    --color-on-primary-fixed: #331200;
+    --color-secondary: #7b5800;
+    --color-on-secondary: #ffffff;
+    --color-secondary-container: #fdc34d;
+    --color-on-secondary-container: #715000;
+    --color-secondary-fixed: #ffdea6;
+    --color-secondary-fixed-dim: #f7bd48;
+    --color-on-secondary-fixed: #271900;
+    --color-tertiary: #39654e;
+    --color-on-tertiary: #ffffff;
+    --color-tertiary-container: #517e66;
+    --color-on-tertiary-container: #f6fff6;
+    --color-tertiary-fixed: #bdeed0;
+    --color-on-tertiary-fixed: #002113;
+  }
+
+  .dark {
+    --color-surface: #141211;
+    --color-surface-dim: #1e1b19;
+    --color-surface-bright: #262220;
+    --color-surface-container-lowest: #1c1816;
+    --color-surface-container-low: #24201d;
+    --color-surface-container: #2d2825;
+    --color-surface-container-high: #38322e;
+    --color-surface-container-highest: #453e39;
+    --color-on-surface: #f5eeea;
+    --color-on-surface-variant: #d5c4ba;
+    --color-inverse-surface: #f5eeea;
+    --color-inverse-on-surface: #1e1e1e;
+    --color-outline: #9e8a7f;
+    --color-outline-variant: #4e443f;
+    --color-primary: #e07937;
+    --color-on-primary: #381502;
+    --color-primary-container: #ff914d;
+    --color-secondary: #f0b938;
+    --color-tertiary: #5fa581;
+  }
+
+  body {
+    background-color: var(--color-surface);
+    color: var(--color-on-surface);
+    font-family: 'Manrope', 'Noto Sans Devanagari', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    overscroll-behavior: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.pb-safe {
+  padding-bottom: max(1rem, env(safe-area-inset-bottom));
+}
+
+.pt-safe {
+  padding-top: max(0.5rem, env(safe-area-inset-top));
+}
